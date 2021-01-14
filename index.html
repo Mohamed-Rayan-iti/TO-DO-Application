@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TO-DO LIST</title>
+  <link rel="shortcut icon" href="https://www.pngitem.com/pimgs/m/164-1649299_do-todo-list-icon-hd-png-download.png"
+    type="image/x-icon">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="doto list">
+  <meta name="description" content="doto list">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="mr-auto ml-auto">
+
+          <h1 class="text-center">Welcome in Al-Rayan Todo List Application</h1>
+
+          <form class="form-block mb-4 mr-2 ml-2">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="searchtextbox" />
+          </form>
+
+          <div class="row mr-2 mr-sm-3 mr-md-0 ml-2 ml-sm-3 ml-md-0">
+            <div class="col-md-8">
+              <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+              <input type="hidden" id="saveindex">
+            </div>
+            <div class="col-md-4 text-center p-0 mt-2 mt-sm-3 mt-md-0">
+              <button type="button" class="btn btn-primary" id="addtaskbtn">
+                Add Task
+              </button>
+              <button type="button" class="btn btn-warning" id="savetaskbtn" style="display: none;">
+                Save Task
+              </button>
+              <button type="button" id="deleteallbtn" class="btn btn-danger ">
+                Delete All
+              </button>
+            </div>
+          </div>
+
+          <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+
+          </table>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
