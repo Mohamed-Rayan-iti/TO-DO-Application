@@ -172,7 +172,7 @@ deleteallbtn.addEventListener("click", function () {
     taskObj = [];
   }
   savetaskbtn.style.display = "none";
-  addtaskbtn.style.display = "block";
+  addtaskbtn.style.display = "inline-block";
   localStorage.setItem("localtask", JSON.stringify(taskObj));
   showtask();
 });
